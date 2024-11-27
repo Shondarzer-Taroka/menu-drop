@@ -2,26 +2,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-.nav_bar{
-    background:rgba(0, 0, 0, 0.705);
+.nav_bar {
+    background: rgba(0, 0, 0, 0.705);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    height: 80px;
+    width: 100%;
 }
 
-.nav_bar ul{
+.nav_bar ul {
     list-style: none;
     display: flex;
-    gap: 12px;
+
 }
 
-.nav_bar ul li{
+.nav_bar ul li {
     padding: 10px 30px;
+    position: relative;
 }
 
-.nav_bar ul li a{
+.nav_bar ul li a {
     color: white;
     text-decoration: none;
+}
+
+.menu-bar-drop {
+    display: none;
+}
+
+.nav_bar ul li:hover .menu-bar-drop {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: red;
+}
+.nav_bar ul li:hover .menu-bar-drop ul{
+    display: block;
+    margin: 10px;
 }
