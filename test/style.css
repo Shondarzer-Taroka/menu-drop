@@ -1,3 +1,27 @@
-p{
-    background-color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.nav_bar{
+    background:rgba(0, 0, 0, 0.705);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_bar ul{
+    list-style: none;
+    display: flex;
+    gap: 12px;
+}
+
+.nav_bar ul li{
+    padding: 10px 30px;
+}
+
+.nav_bar ul li a{
+    color: white;
+    text-decoration: none;
 }
